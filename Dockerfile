@@ -2,7 +2,7 @@ FROM debian:stable-slim
 
 RUN apt update
 RUN apt install -yy wget curl gnupg
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
 	apt update && apt install -y nodejs
 RUN node -v && npm -v
 
